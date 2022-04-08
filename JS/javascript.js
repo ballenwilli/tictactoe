@@ -77,7 +77,7 @@ function playRound() {
     console.log(outcome);
   }
   if (playerSelection === "paper" && computerSelection === "scissors") {
-    outcome = "You lose! :( Scissors beats Rock!)"
+    outcome = "You lose! :( Scissors beats Paper!)"
     losses = losses + 1;
     console.log(outcome);
   }
@@ -92,6 +92,7 @@ function game() {
   for (let p = 0; p <5; p++){
     let choice = window.prompt("Choose!: ")
     playerSelection = choice.toLowerCase();
+    playerSelection = playerSelection.trim();
     computerPlay();
     playRound();
   }
