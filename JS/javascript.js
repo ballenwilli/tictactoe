@@ -1,7 +1,7 @@
 // Welcome
 console.log("Welcome to Tic Tac Toe!");
 // Prompt the user for their choice.
-let choice = window.prompt(": ")
+//let choice = window.prompt(": ")
 // declare variables for sanity
 let wins = 0;
 let losses = 0;
@@ -9,10 +9,10 @@ let ties = 0;
 playerSelection = "";
 computerSelection = "";
 // Randomize the computer's choice
-playerSelection = choice.toLowerCase(); // makes player choice lower case to avoid errors.
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
+//playerSelection = choice.toLowerCase(); // makes player choice lower case to avoid errors.
+//function getRandomInt(max) {
+//  return Math.floor(Math.random() * max);
+//}
 function computerPlay() {
   let x = 0;
   x = getRandomInt(3);
