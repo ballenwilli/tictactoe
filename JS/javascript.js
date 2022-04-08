@@ -43,8 +43,8 @@ if (playerSelection === "rock" && computerSelection === "paper") {
   losses = losses = 1;
   console.log(outcome);
 }
-if (playerSelection === "rock" && computerSelection === "paper") {
-  outcome = "You lose! :( Paper covers Rock!)"
-  losses = losses = 1;
+if (playerSelection === "rock" && computerSelection === "rock") {
+  outcome = "You tie";
+  ties = ties + 1;
   console.log(outcome);
 }
