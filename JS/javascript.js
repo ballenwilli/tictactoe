@@ -10,9 +10,9 @@ playerSelection = "";
 computerSelection = "";
 // Randomize the computer's choice
 //playerSelection = choice.toLowerCase(); // makes player choice lower case to avoid errors.
-//function getRandomInt(max) {
-//  return Math.floor(Math.random() * max);
-//}
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
 function computerPlay() {
   let x = 0;
   x = getRandomInt(3);
@@ -27,7 +27,7 @@ function computerPlay() {
   } return (computerSelection);
 }
 //x = computerPlay();
-console.log("Player selection is:", playerSelection);
+//console.log("Player selection is:", playerSelection);
 
 //if (x === 0) {
 //  computerSelection = "rock";
@@ -37,7 +37,7 @@ console.log("Player selection is:", playerSelection);
 //  else {
 //computerSelection = "paper";
 //}
-console.log("Computer Selection is:", computerSelection);
+//console.log("Computer Selection is:", computerSelection);
 // Display the result.
 function playRound() {
   let outcome = "null";
