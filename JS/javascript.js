@@ -2,6 +2,7 @@
 console.log("Welcome to Tic Tac Toe!");
 // Prompt the user for their choice.
 let choice = window.prompt(": ")
+// declare variables for sanity
 let wins = 0;
 let losses = 0;
 let ties = 0;
@@ -16,19 +17,26 @@ function computerPlay() {
   let x = 0;
   x = getRandomInt(3);
   console.log(x);
-  return x;
+  if (x === 0) {
+    computerSelection = "rock";
+  } else if (x === 1) {
+    computerSelection = "scissors";
+      }
+    else {
+    computerSelection = "paper";
+  } return (computerSelection);
 }
-x = computerPlay();
+//x = computerPlay();
 console.log("Player selection is:", playerSelection);
 
-if (x === 0) {
-  computerSelection = "rock";
-} else if (x === 1) {
-  computerSelection = "scissors";
-    }
-  else {
-  computerSelection = "paper";
-}
+//if (x === 0) {
+//  computerSelection = "rock";
+//} else if (x === 1) {
+//  computerSelection = "scissors";
+//    }
+//  else {
+//computerSelection = "paper";
+//}
 console.log("Computer Selection is:", computerSelection);
 // Display the result.
 function playRound() {
@@ -83,7 +91,12 @@ function playRound() {
 function game() {
   for (let p = 0; p <5; p++){
     let choice = window.prompt("Choose!: ")
-    playerSelection = choice.lowerCase();
-    x = computerPlay();
+    playerSelection = choice.toLowerCase();
+    computerPlay();
+    playRound();
   }
 }
+game();
+console.log("Wins", wins);
+console.log("Losses", losses);
+console.log("Ties", ties);
