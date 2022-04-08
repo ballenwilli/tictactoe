@@ -12,7 +12,7 @@ playerSelection = choice.toLowerCase(); // makes player choice lower case to avo
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
-function computerPlay(i) {
+function computerPlay() {
   let x = 0;
   x = getRandomInt(3);
   console.log(x);
@@ -47,4 +47,11 @@ if (playerSelection === "rock" && computerSelection === "rock") {
   outcome = "You tie";
   ties = ties + 1;
   console.log(outcome);
+}
+function game() {
+  for (let p = 0; p <5; p++){
+    let choice = window.prompt("Choose!: ")
+    playerSelection = choice.lowerCase();
+    x = computerPlay();
+  }
 }
