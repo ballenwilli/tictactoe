@@ -1,5 +1,5 @@
 // Welcome
-console.log("Welcome to Tic Tac Toe!");
+console.log("Welcome to Rock Paper Scissors");
 // Prompt the user for their choice.
 //let choice = window.prompt(": ")
 // declare variables for sanity
